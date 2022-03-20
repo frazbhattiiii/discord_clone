@@ -24,7 +24,7 @@ router.post('/register',validator.body(registerSchema),authControllers.controlle
 router.post('/login',validator.body(loginSchema),authControllers.controllers.postLogin);
 
 
-// testing route to verify if our middleware is working
+// testing route to verify for the token JWT token (Bearer)
 router.get('/test',auth,(req,res)=>{
    res.status(201).send('Request Passed')
 });

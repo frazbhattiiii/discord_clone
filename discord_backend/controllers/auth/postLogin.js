@@ -13,6 +13,7 @@ const postLogin = async (req,res)=>{
           userId:user._id,
           mail
         }, 
+        // here we are giving the secret key
         process.env.TOKEN_KEY,
         {
             expiresIn:'24h'

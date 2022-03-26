@@ -1,7 +1,7 @@
 import * as api from '../../api';
-
 export const authActions ={
   // firstly, declaring the action
+  
   SET_USER_DETAILS:"AUTH.SET_USER_DETAILS",
 };
 export const getActions=(dispatch)=>{

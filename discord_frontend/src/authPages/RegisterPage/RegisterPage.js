@@ -5,8 +5,6 @@ import RegisterPageInputs from './RegisterPageInputs';
 import RegisterPageFooter from './RegisterPageFooter';
 import { validateRegisterForm } from '../../shared/utils/validators';
 
-
-
 export default function RegisterPage() {
   const [mail,setMail]=useState("");
   const [password,setPassword] = useState("");

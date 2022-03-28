@@ -2,8 +2,6 @@ import * as api from '../../api';
 import {openAlertMessage} from './alertActions';
 export const authActions ={
   // firstly, declaring the action we can name whatever we want but we have to follow the convention
-
-  
   SET_USER_DETAILS:"AUTH.SET_USER_DETAILS",
 };
 // This function will enable us to execute (dispatch) all the actions like register and login

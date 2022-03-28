@@ -9,8 +9,8 @@ const reducer =(state=initState,action)=>{
   switch(action.type){
     case 'authActions.SET_USER_DETAILS':
       return {
-        ...state,
-        userDetails:action.userDetails,
+        ...state,//Will destructure the current state
+        userDetails:action.userDetails,//And now setting the new state
       };
       default:
         return state

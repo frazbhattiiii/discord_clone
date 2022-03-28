@@ -4,6 +4,7 @@ import RegisterPage from './authPages/RegisterPage/RegisterPage';
 import LoginPage from './authPages/LoginPage/LoginPage';
 import Dashboard from './Dashboard/Dashboard';
 import './App.css';
+import AlertNotifications from './shared/components/AlertNotifications';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
     />
    
     </Routes>
-    
+    <AlertNotifications/> 
   </Router>
   );
 }

@@ -4,13 +4,16 @@ import LoginPageFooter from './LoginPageFooter';
 import LoginPageHeader from './LoginPageHeader';
 import LoginPageInputs from './LoginPageInputs';
 import { validateLoginForm} from '../../shared/utils/validators';
+// connect will be used to connect the component to the redux store
 import {connect} from 'react-redux';
+// getActions will be used to get the actions from the redux store
 import { getActions } from '../../store/actions/authActions';
 import { useNavigate } from 'react-router-dom';
 /**
  * TODO
  * 
  */
+// Login props will be provided from the redux store by the below function 
 const LoginPage=({login})=> {
   const navigate = useNavigate();
   const [mail,setMail]=useState("");
@@ -39,6 +42,7 @@ password
    </AuthBox>
   )
 }
+// mapActionsToProps will be used to map the actions to the props
 const mapActionsToProps =(dispatch)=>{
   return{
     ...getActions(dispatch),

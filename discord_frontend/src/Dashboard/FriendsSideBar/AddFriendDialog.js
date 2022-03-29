@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import React,{useState,useEffect} from 'react';
 import InputWithLabel from '../../shared/components/InputWithLabel';
 import {validateMail} from '../../shared/utils/validators'
+import CustomPrimaryButton from '../../shared/components/CustomPrimaryButton';
 
 function AddFriendDialog({
   isDialogOpen,
@@ -51,6 +52,18 @@ useEffect(() => {
           />
      
       </DialogContent>
+      <DialogActions>
+        <CustomPrimaryButton
+        onClick={handleSendInvitaiton}
+        disabled={!isFormValid}
+        label='Send Invitation'
+        additionalStyles={{
+          marginRight:'15px',
+          marginLeft:'15px',
+          marginBottom:'10px'
+        }}
+        />
+      </DialogActions>
     </Dialog>
   )
 }

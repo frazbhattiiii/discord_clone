@@ -53,7 +53,7 @@ const RegisterPage=({register})=> {
   )
 }
 const mapActionsToProps =(dispatch)=>{
-  return{
+  return{ 
     ...getActions(dispatch),
 
   }
